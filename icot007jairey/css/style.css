@@ -313,67 +313,54 @@ header .navbar-header a img{ display: inline-block;}
   background-color: transparent;
   color: #555555; text-align:center;
 }
-.slider{
+
+.slider {
   width:500px;
   background: rgba(0,0,0,0);
 }
 
-.logoiconde-banner {
-  padding: 45px 0;
-  text-align: center;
+.top-animation {
+  margin-top: -40px;
 }
-
-.logoiconde-banner img {
-  display: inline-block;
-}
-
-.logoiconde-banner {
-  padding: 51px 0 0;
-  text-align: center;
-}
-
 
 .banners {
   padding: 106px 0;
   position: relative;
+  margin-bottom: -50px;
 }
 
-.bannertext {
-  padding: 93px 0 0;
+.banner-section {
+  display: flex;
+  align-items: center;
+  overflow-wrap: wrap;
 }
 
-.bannertext h1 {
-  font-size: 45px;
-  font-weight: bold;
-  text-transform: uppercase;
+.dynamic-headline {
+  margin-top: 90px;
+
 }
 
-.bannertext a {
-  border-right: 3px solid #25D1E8;
+.dynamic-headline a {
+  color: #3D5A96;
+  border-right: 3px solid #40A4CC;
+  text-decoration: none;
 }
 
-.bannertext h1 span {
-  display: block;
-  font-size: 32px;
+.dynamic-headline a:hover {
+  color: #3D5A96;
+  cursor: default;
 }
 
-.bannertext p {
-  font-size: 14px;
-  font-weight: bold;
-  padding: 11px 0;
-  text-transform: uppercase;
-}
-
-
-.bannertext a {
-  margin: 8px 17px 0 0;
+.dynamic-headline h1 {
+  width: 400px;
+  height: 100px;
 }
 
 .footersoci > h3 {
   color: #0080ff;
   padding: 0 0 15px;
   text-transform: capitalize;
-   display: inline-block;
+  display: inline-block;
   font-size: 26px;
   font-weight: bold;
 }
