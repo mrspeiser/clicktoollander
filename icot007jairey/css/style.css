@@ -1955,7 +1955,7 @@ td img {
 }
 
 .navbar-collapse {
-  background-color: #0080ff !important;
+  /*background-color: #0080ff !important;*/
   border-bottom: medium none;
   border-top: medium none;
   height: auto !important;
