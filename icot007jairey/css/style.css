@@ -10,7 +10,7 @@ select{appearance:none !important; -moz-appearance:none !important; -webkit-appe
 transition:.3s;}
 select:active, select:focus{ border-radius:0; transition:.3s;}
 input[type="submit"]{ border:none;}
-body{font-family: 'Montserrat', sans-serif;}
+body{font-family: 'Montserrat', sans-serif; overflow-x: hidden;}
 
 wrapper{ width:100%;}
 
@@ -390,7 +390,37 @@ header .navbar-header a img{ display: inline-block;}
   margin: 25px 0 0;
 }
 
+.navbar-shadow {
+  box-shadow: 0px 3px 5px -2px #a9a9a9;
+}
 
+.navbar-xtra-pad {
+  padding: 0px 15px;
+}
+
+.icon-bar {
+  background-color: #fff;
+}
+
+.txt-ctn {
+  width: 100%;
+}
+
+.spc {
+  line-height: 2;
+  padding:10px;
+}
+
+.mg-bt {
+  margin-bottom: 13px;
+}
+.reltop {
+  position: relative;
+    top: -12px;
+}
+.cntr {
+  text-align: center;
+}
 
 .indexaboutsec {
   background: rgba(0, 0, 0, 0)  url(../images/aboutbg.png) no-repeat scroll center/cover;
@@ -2136,7 +2166,6 @@ td img {
 
   width: auto;
 }
-
 
 .navbar-toggle {
   background-color: #0080ff;
