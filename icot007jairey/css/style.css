@@ -412,11 +412,30 @@ left: -41px !important;
 }
 
 .featuresdes {
-  background:  rgba(0, 0, 0, 0) url(../images/featbg.jpg) no-repeat scroll center/cover;
+  background: rgba(0, 0, 0, 0) url(../images/featbg.jpg) no-repeat scroll center/cover;
   padding: 48px 0;
 }
 
+/* New Section */
+.info-row {
+  padding: 30px;
+}
 
+.text-center {
+  text-align: center;
+}
+
+.info-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.info-icon img {
+  height: 120px;
+  width: 120px;
+}
+
+/* End New Section */
 
 .title::after {
   background: rgba(0, 0, 0, 0) url(../images/afthead1.png) no-repeat scroll 0 0;
@@ -802,39 +821,39 @@ left: -41px !important;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  display: inline;
 }
 
 .iconsecdefeat {
   border-radius:0 50% 0 50%; background:#fff;
-
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   height: 70px;
   margin: 5px 0 25px;
   position: relative;
   width: 70px;
+  margin: 20px auto;
 }
 
 .iconsecdefeat img {
   background: #0080ff none repeat scroll 0 0;
   border-radius: 50%;
-  display: inline-block;
   height: 57px;
-  margin: 6px 0 0;
   width: 57px;
 }
+
 .featcont > h4 {
   font-size: 18px;
   font-weight: 800;
   padding: 0;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .featcont p {
   font-family: open sans;
   font-size: 14px;
   line-height: 24px;
-  padding: 20px 0 0;
-  width: 311px;
 }
 
 .discrip ul {
