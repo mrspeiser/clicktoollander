@@ -249,7 +249,7 @@ width:100%; font-size:16px; color:#f6403f; font-family:"open Sans"; min-height:1
   text-align: right;
 }
 .language button {
-	font-family: 'Ubuntu', sans-serif; 
+	font-family: 'Ubuntu', sans-serif;
   background: transparent none repeat scroll 0 0;
   border: medium none;
   color: #fff;
@@ -282,7 +282,6 @@ header .navbar-nav > li{ padding:0;}
 
 
 header .navbar-nav > li > a {
-  color: #fff !important;
   font-family: "Ubuntu",sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -305,10 +304,15 @@ header .navbar-collapse{ padding:0; box-shadow:none;}
 header .navbar-header a{ display: inline-block;}
 header .navbar-header a img{ display: inline-block;}
 
+.nav-logo {
+  height: 60px;
+  width: 60px;
+}
+
 .bitcoineff {
   background-color: transparent;
   color: #555555; text-align:center;
-} 
+}
 .slider{
   width:500px;
   background: rgba(0,0,0,0);
@@ -330,7 +334,6 @@ header .navbar-header a img{ display: inline-block;}
 
 
 .banners {
-  background: rgba(0, 0, 0, 0) url("../images/index_banner_bg.jpg") no-repeat scroll center center / cover ;
   padding: 106px 0;
   position: relative;
 }
@@ -340,18 +343,21 @@ header .navbar-header a img{ display: inline-block;}
 }
 
 .bannertext h1 {
-  color: #fff;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.bannertext a {
+  border-right: 3px solid #25D1E8;
+}
+
 .bannertext h1 span {
   display: block;
   font-size: 32px;
 }
 
 .bannertext p {
-  color: #fff;
   font-size: 14px;
   font-weight: bold;
   padding: 11px 0;
@@ -401,7 +407,7 @@ header .navbar-header a img{ display: inline-block;}
 }
 
 .title.centersect:after{  background: rgba(0, 0, 0, 0)  url(../images/afthead.png) no-repeat scroll 0 0;}
-.title.centersect:before{ 
+.title.centersect:before{
 background: rgba(0, 0, 0, 0)  url(../images/afthead.png) no-repeat scroll 0 0;
 left: -41px !important;
   margin: 0;
@@ -411,7 +417,7 @@ left: -41px !important;
   content: "";
   height: 27px;
    width: 33px; position:absolute;
-  
+
   }
 .centersect {
   color: #fff;
@@ -547,7 +553,7 @@ left: -41px !important;
 
 .roadmap_caraousel{ overflow:hidden;}
 .roadmap_caraousel .owl-controls .owl-pagination{ display:none;}
-.roadmap_caraousel .owl-item{ text-align:center;} 
+.roadmap_caraousel .owl-item{ text-align:center;}
 .roadmap_caraousel .owl-item img{ width:auto; display:inline-block;}
 .rightsidehead {
   text-align: right;
@@ -582,7 +588,7 @@ left: -41px !important;
   font-family: open sans;
   font-size: 14px;
   line-height: 24px;
-  padding: 5px 0; 
+  padding: 5px 0;
 }
 
 .roadmap_inner .roadmap_content {
@@ -1146,8 +1152,8 @@ box-shadow: inset -3px 0px 0px 0px rgba(157,186,250,1);}
 
 .hdrmnu .navbar-nav > .dropdown > a i{ margin-left:8px; font-size:12px;}
 
-.actadmn > .open > a, 
-.actadmn > .open > a:focus, 
+.actadmn > .open > a,
+.actadmn > .open > a:focus,
 .actadmn > .open > a:hover{ background:none;}
 
 .actadmn h4 .open a i{ background-color:#0080ff !important; transition:.3s;}
@@ -1163,7 +1169,7 @@ box-shadow: inset -3px 0px 0px 0px rgba(157,186,250,1);}
 .dshwlcm h3{ width:100%; display:inline-block; font-size:22px; color:#02ffff; font-weight:bold; text-transform:capitalize;}
 .dshwlcm h3 span{ font-size:14px; color:#02ffff; text-transform:capitalize; font-weight:normal; margin:0 15px;}
 .dshwlcm h3 span i{ margin-right:5px;}
-.dshwlcm h3 span small{ font-size:14px; color:#fff; display:inline-block; margin: 0 18px 0 5px;} 
+.dshwlcm h3 span small{ font-size:14px; color:#fff; display:inline-block; margin: 0 18px 0 5px;}
 
 .dshbrdcrumb{ width;100%; text-align:right; padding: 2px 0;}
 .dshbrdcrumb .breadcrumb{ padding:0; margin-bottom:0;}
@@ -1184,13 +1190,13 @@ vertical-align:middle; display:inline-block; padding: 16px 34px; border-radius: 
 .dshqlnkslft ul li a{ display:inline-block; font-size:16px; color:#312f54; font-weight:bold; text-transform:capitalize; transition:.3s;}
 .dshqlnkslft ul li a:hover{ color:#9dbafa; transition:.3s;}
 .dshqlnkslft ul li a i{ margin-left:5px;}
- 
+
 .dshqlnksrit{ width:100%;}
 .dshqlnksrit h4{ display:inline-block; width:100%; background:#fff; font-size:16px; color:#312f54; font-weight:bold;
 border-radius:30px;}
 .dshqlnksrit h4 i{ font-size:18px; color:#fff; width:52px; height:52px; border-radius:50%; text-align:center; line-height:52px;
 background:#312f54; display:inline-block; margin-right:15px;}
-.dshqlnksrit h4 span{ font-weight:normal;} 
+.dshqlnksrit h4 span{ font-weight:normal;}
 
 .dshbxs{ width:100%;}
 .dshbdttl{ width:100%;}
@@ -1260,7 +1266,7 @@ margin-bottom:30px;}
 }
 .daslindes h4 a {
   color: #0080ff;
-  
+
 }
 
 .linkdesdasbordmain ul {
@@ -1353,7 +1359,7 @@ margin-bottom:30px;}
   width: 57px;
 }
 .boxdasdes h4, .imgdestra h4 {
-  
+
   color: #bcbcbc;
   font-size: 18px;
   line-height: 28px;
@@ -1573,7 +1579,7 @@ table tbody tr td {
 
 .timeredes .tooltip {
   bottom: -67px;
-  
+
 }
 
 .slider_bar .slider.slider-horizontal { height: 24px; width: 100%;}
@@ -1720,7 +1726,7 @@ td img {
   padding: 3px 0;
 }
 
-  
+
   .ashclr {
   color: #bcbcbc;
 }
@@ -1849,7 +1855,7 @@ td img {
 }
 
 .regtapsecded .nav > li > a {
-	
+
   display: block;
   padding: 6px 47px;
   position: relative;
@@ -1924,7 +1930,7 @@ td img {
   margin: 0;
 }
 
-	
+
 	.boxdasdes {
   width: auto;
 }
@@ -2009,7 +2015,7 @@ td img {
 }
 
 
-	
+
 	.title { text-align:center;
 }
 	.title::after, .title.centersect::before, .tokendescri::before {
@@ -2083,7 +2089,7 @@ td img {
 	.footerbtm h6 {
   font-size: 12px;
 }
-	
+
 	.footerbtm li {
   display: inline-block;
   padding: 0;
@@ -2111,7 +2117,7 @@ td img {
   width: auto; border-radius:0px;
 }
 .digit {
- 
+
   width: auto;
 }
 
@@ -2128,7 +2134,7 @@ td img {
 
 .countdownHolder > span::after{ content:inherit;}
 	header .navbar-nav > li > a {
-		
+
   padding: 6px 0;
 }
 
@@ -2228,12 +2234,12 @@ header {
 }
 
 @media only screen and (max-width: 420px){
-	
+
 
 	.videdes span img {
   padding: 55px 0 0;
 }
-	
+
 .regtapsecded .nav > .active > a {
   padding: 15px 29px;
 }
