@@ -555,7 +555,7 @@ left: -41px !important;
 }
 
 .roadmap {
-  background:  url(../images/key.png) no-repeat scroll left center, rgba(0, 0, 0, 0) url(../images/keybg.jpg) no-repeat scroll center/cover;
+  /*background:  url(../images/key.png) no-repeat scroll left center, rgba(0, 0, 0, 0) url(../images/keybg.jpg) no-repeat scroll center/cover;*/
   padding: 53px 0;
 }
 .rightsidehead::after {
