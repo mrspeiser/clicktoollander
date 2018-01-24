@@ -1,0 +1,92 @@
+.countdownHolder{
+	width:100%;
+	margin:auto;
+	font-size:50px;
+	line-height:normal;
+	font-family: 'Ubuntu', sans-serif;
+	text-align:center; font-weight:bold;
+	letter-spacing:0;
+}
+
+.position {
+  display: inline-block;
+  height: 1.1em;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  width: 34px;
+}
+
+
+.digit {
+  background-color: #444;
+  border-radius: 0;
+  bottom: 0;
+  color: #0080ff;
+  display: block;
+  left: 0;
+  letter-spacing: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 1em;
+}
+
+
+.countdownHolder > span{ display:inline-block; height:100%; letter-spacing: -11px;}
+
+/*.digit.static{
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
+	
+	background-image: linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -o-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -moz-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -webkit-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -ms-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, #3A3A3A),
+		color-stop(0.5, #444444)
+	);
+}*/
+
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+/*.countDiv{
+	display:none;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#444;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
+}*/
