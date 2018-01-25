@@ -450,22 +450,165 @@ left: -41px !important;
 }
 
 /* New Section */
+.top-margin {
+  margin-top: 20px;
+}
+
+.info-icon h1 {
+  position: absolute;
+  top: 45px;
+  left: 190px;
+  animation: revolve 3s linear infinite;
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+@keyframes revolve {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 .info-row {
   padding: 30px;
+  font-weight: 250;
+}
+
+.blue {
+  color: #1683fb;
+}
+
+.info-row p {
+  color: black;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .info-icon {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  height: 140px;
 }
 
-.info-icon img {
-  height: 120px;
-  width: 120px;
+.circle {
+  position: absolute;
+  left: 120px;
+  top: -5px;
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+  background: linear-gradient(#1E1F9E, #6FDBFF);
+}
+
+.white-gear {
+  position: absolute;
+  left: 90px;
+  top: -36px;
+  height: 242px;
+  width: 242px;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 110px;
+  top: 50px;
+  animation: upAndDown 1.5s ease-in-out infinite;
+}
+
+#arrow1 {
+  left: 130px;
+}
+
+#arrow2 {
+  left: 160px;
+  animation-delay: 0.5s
+}
+
+#arrow3 {
+  left: 190px;
+  animation-delay: 1s
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(0,20px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+.white-cursor {
+  height: 100px;
+  position: absolute;
+  left: 155px;
+  top: 35px;
+}
+
+.click-effect {
+  position: absolute;
+  height: 100px;
+  left: 155px;
+  top: 35px;
+  animation: click 2s ease-in-out infinite;
+}
+
+@keyframes click {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1
+  }
+  97% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.moving-cursor {
+  animation: moveCursor 2s ease infinite;
+}
+
+@keyframes moveCursor {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, 10px);
+  }
+  50% {
+    transform: translate(20px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /* End New Section */
@@ -1987,8 +2130,6 @@ td img {
   margin: 0 0 13px;
   text-align: center;
 }
-
-
 
 .imgdestra {
   float: none;
