@@ -56,3 +56,45 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 // End Dynamic Headline
+
+$(window).scroll(function() {
+
+    // get how far we've scrolled from the top of our screen
+    var offset = $(window).scrollTop();
+    offset     = 90 + (offset * 0.2);
+
+    // apply the offset as a css transform to our buttons
+    $('.wrench').css({
+        '-moz-transform': 'rotate(' + offset + 'deg)',
+        '-webkit-transform': 'rotate(' + offset + 'deg)',
+        '-o-transform': 'rotate(' + offset + 'deg)',
+        '-ms-transform': 'rotate(' + offset + 'deg)',
+        'transform': 'rotate(' + offset + 'deg)',
+    });
+
+    $('#light-blue-gear').css({
+        '-moz-transform': 'rotate(' + offset + 'deg)',
+        '-webkit-transform': 'rotate(' + offset + 'deg)',
+        '-o-transform': 'rotate(' + offset + 'deg)',
+        '-ms-transform': 'rotate(' + offset + 'deg)',
+        'transform': 'rotate(' + offset + 'deg)',
+    });
+
+    offset = 360 - offset;
+    $('.multigray-circle').css({
+        '-moz-transform': 'rotate(' + offset + 'deg)',
+        '-webkit-transform': 'rotate(' + offset + 'deg)',
+        '-o-transform': 'rotate(' + offset + 'deg)',
+        '-ms-transform': 'rotate(' + offset + 'deg)',
+        'transform': 'rotate(' + offset + 'deg)',
+    });
+
+    $('#pink-gear').css({
+        '-moz-transform': 'rotate(' + offset + 'deg)',
+        '-webkit-transform': 'rotate(' + offset + 'deg)',
+        '-o-transform': 'rotate(' + offset + 'deg)',
+        '-ms-transform': 'rotate(' + offset + 'deg)',
+        'transform': 'rotate(' + offset + 'deg)',
+    });
+
+});
