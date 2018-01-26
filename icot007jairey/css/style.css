@@ -323,13 +323,16 @@ header .navbar-header a img{ display: inline-block;}
 }
 
 .top-animation {
-  margin-top: -40px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .banners {
   padding: 106px 0;
   position: relative;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
 }
 
 .banner-section {
