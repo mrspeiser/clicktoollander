@@ -677,6 +677,41 @@ left: -41px !important;
 
 /* End New Section */
 
+/* Team Section */
+.team-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.team-div {
+  margin-top: 60px;
+  height: 250px;
+  text-align: center;
+  color: #26537A;
+  width: 220px;
+}
+
+.team-div:hover {
+  background-color: #25D1E8;
+}
+
+.team-div img {
+  height: 200px;
+}
+
+.employee {
+  width: 220px;
+  transition: transform 0.3s;
+}
+
+.employee:hover {
+  transform: translate(0, -50px);
+}
+
+/* End Team Section */
+
 .title::after {
   background: rgba(0, 0, 0, 0) url(../images/afthead1.png) no-repeat scroll 0 0;
   bottom: 0;
