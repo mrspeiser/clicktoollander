@@ -1240,7 +1240,7 @@ left: -41px !important;
   opacity: 1;
 }
 
-
+/* Features Section */
 .featsecde {
   color: #fff;
   padding: 20px 0;
@@ -1257,6 +1257,125 @@ left: -41px !important;
   position: relative;
   width: 70px;
   margin: 20px auto;
+}
+
+.new-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+.new-icons img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+#lightning-flash {
+  animation: lightning 1.5s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes lightning {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#feature-gear {
+  filter: brightness(0) invert(1);
+  animation: rotate 6s linear infinite;
+}
+
+#dial {
+  height: 100px !important;
+  width: 150px !important;
+}
+
+#meter {
+  top: 25px;
+  height: 80px !important;
+  width: 30px !important;
+  animation: meter 3s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes meter {
+  0% {
+    transform: rotate(78deg);
+  }
+  50% {
+    transform: rotate(92deg);
+  }
+  100% {
+    transform: rotate(78deg);
+  }
+}
+
+#code {
+  top: 0px;
+  height: 100px;
+  width: 100px !important;
+  overflow: hidden;
+  animation: code 5s ease-in-out infinite;
+}
+
+@keyframes code {
+  0% {
+    transform: translate(10px, 0);
+  }
+  25% {
+    transform: translate(-30px, 0px);
+  }
+  50% {
+    transform: translate(10px, -20px);
+  }
+  75% {
+    transform: translate(-30px, -20px);
+  }
+  100% {
+    transform: translate(10px, 0);
+  }
+}
+
+#code-circle {
+  position: absolute;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  left: 150px;
+  animation: glass 5s ease-in-out infinite;
+}
+
+#mg {
+  animation: glass 5s ease-in-out infinite;
+}
+
+@keyframes glass {
+  0% {
+    transform: translate(-20px, 0);
+  }
+  25% {
+    transform: translate(20px, 0px);
+  }
+  50% {
+    transform: translate(-20px, 20px);
+  }
+  75% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(-20px, 0);
+  }
 }
 
 .iconsecdefeat img {
