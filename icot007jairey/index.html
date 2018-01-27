@@ -169,15 +169,16 @@
     </div>
   </div>
 
-  <div class="roadmap">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="titldes">
-            <h2 class="title rightsidehead">Key Dates</h2>
-          </div>
+  <div class="roadmap-with-gear">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="titldes">
+          <h2 class="title rightsidehead">Key Dates</h2>
         </div>
       </div>
+    </div>
+  <div class="roadmap slideshow milestones">
+    <div class="container">
       <div class="row">
         <!-- <div class="col-md-3"></div> -->
         <div class="col-md-12">
@@ -252,6 +253,12 @@
       </div>
     </div>
   </div>
+    <div class="container spingear-container">
+      <img class="spin-gear spin" src="images/spin-gear.png">
+    </div>
+  </div>
+
+
 
   <div class="container"><!-- New Section -->
     <h2 class="text-center title blue">NEW SECTION</h2>
@@ -1054,7 +1061,9 @@ $(function() {
 
 -->
 
-<script>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+
 $(document).ready(function(){
     $(".up").click(function(){
         $(".up").toggleClass("press");
