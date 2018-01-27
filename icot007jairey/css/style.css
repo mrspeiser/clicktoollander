@@ -323,13 +323,16 @@ header .navbar-header a img{ display: inline-block;}
 }
 
 .top-animation {
-  margin-top: -40px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .banners {
   padding: 106px 0;
   position: relative;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
 }
 
 .banner-section {
@@ -447,6 +450,67 @@ left: -41px !important;
 .featuresdes {
   background: rgba(0, 0, 0, 0) url(../images/featbg.jpg) no-repeat scroll center/cover;
   padding: 48px 0;
+}
+
+
+/* About Section 2 */
+
+.wrench-container {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrench {
+  position: absolute;
+  height: 2000px;
+  transform: rotate(180deg);
+  top: -820px;
+  left: -200px;
+  z-index: 2;
+}
+
+.multigray-circle {
+  position: absolute;
+  height: 105px;
+  top: 128px;
+  left: 110px;
+  z-index: 1;
+}
+
+#light-blue-gear {
+  position: absolute;
+  z-index: -2 !important;
+  left: -120px;
+  top: 0px;
+  height: 250px;
+}
+
+#pink-gear {
+  position: absolute;
+  z-index: -2 !important;
+  left: 400px;
+  top: 240px;
+  height: 220px;
+}
+
+.white-lines {
+  position: absolute;
+  height: 250px;
+  width: 350px;
+  z-index: -1;
+}
+
+#whitelines1 {
+  left: -150px;
+  top: 0px;
+  transform: rotate(50deg);
+}
+
+#whitelines2 {
+  left: 350px;
+  top: 200px;
+  transform: rotate(120deg);
 }
 
 /* New Section */
@@ -633,8 +697,6 @@ left: -41px !important;
   padding: 22px 0;
 }
 
-
-
 .countDays, .countHours, .countMinutes, .countSeconds {
   background: #fff none repeat scroll 0 0;
   border-radius: 50%;
@@ -729,6 +791,10 @@ left: -41px !important;
 .timer_content{ width:100%; display:inline-block;}
 .timersect {
   background: #0080ff none repeat scroll 0 0;
+}
+
+.timersect div {
+  z-index: 4;
 }
 
 
