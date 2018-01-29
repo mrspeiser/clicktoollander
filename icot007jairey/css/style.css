@@ -1264,12 +1264,127 @@ left: -41px !important;
   display: flex;
   justify-content: center;
   height: 120px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .new-icons img {
   position: absolute;
   height: 100px;
   width: 100px;
+}
+
+.bar {
+  position: absolute;
+  height: 60px;
+  background-color: white;
+  width: 10px;
+
+}
+
+#bar1 {
+  top: 40px;
+  left: 140px;
+  animation: barOne 3s ease infinite;
+}
+
+@keyframes barOne {
+  0% {
+    transform: translate(0, 140px);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(0, 60px);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 60px);
+    opacity: 0;
+  }
+}
+
+#bar2 {
+  top: 30px;
+  left: 160px;
+  animation: barTwo 3s ease infinite;
+}
+
+@keyframes barTwo {
+  0% {
+    transform: translate(0, 140px);
+  }
+  10% {
+    transform: translate(0, 140px);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0, 60px);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 60px);
+    opacity: 0;
+  }
+}
+
+#bar3 {
+  top: 20px;
+  left: 180px;
+  animation: barThree 3s ease infinite;
+}
+
+@keyframes barThree {
+  0% {
+    transform: translate(0, 140px);
+  }
+  20% {
+    transform: translate(0, 140px);
+    opacity: 0;
+  }
+  40% {
+    transform: translate(0, 60px);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 60px);
+    opacity: 0;
+  }
+}
+
+#bar4 {
+  top: 10px;
+  left: 200px;
+  animation: barFour 3s ease infinite;
+}
+
+@keyframes barFour {
+  0% {
+    transform: translate(0, 140px);
+  }
+  30% {
+    transform: translate(0, 140px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0, 60px);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 60px);
+    opacity: 0;
+  }
 }
 
 #lightning-flash {
