@@ -59,11 +59,9 @@ var TxtType = function(el, toRotate, period) {
 
 $(window).scroll(function() {
 
-    // get how far we've scrolled from the top of our screen
     var offset = $(window).scrollTop();
-    offset     = 90 + (offset * 0.2);
+    offset     = 150 + (offset * 0.2);
 
-    // apply the offset as a css transform to our buttons
     $('.wrench').css({
         '-moz-transform': 'rotate(' + offset + 'deg)',
         '-webkit-transform': 'rotate(' + offset + 'deg)',
