@@ -822,25 +822,60 @@ left: -41px !important;
   text-align: right;
 }
 
-.spingear-container {
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: -250px;
-  top: 80px;
-  width: 550px;
-  height: 550px;
+.milestone-container {
+  height: 400px;
+  overflow: hidden;
 }
 
-.spin-gear {
-  height: 500px;
-  width: 500px;
+.milestone-gear {
+
+}
+
+.milestone1 {
+  animation: milestoneOne 0.4s linear;
   transform: rotate(0deg);
+}
+
+@keyframes milestoneOne {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+.milestone2 {
+  animation: milestoneTwo 0.2s linear !important;
+  transform: rotate(45deg);
+}
+
+@keyframes milestoneTwo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg)
+  }
+}
+
+.milestone3 {
+  animation: milestoneThree 0.2s linear !important;
+  transform: rotate(90deg);
+}
+
+@keyframes milestoneThree {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg)
+  }
 }
 
 .spin {
   animation: rotate 20s linear infinite;
+  animation-direction: reverse;
 }
 
 @keyframes rotate {
@@ -904,47 +939,7 @@ left: -41px !important;
   }
 }
 
-.milestone1 {
-  left: 50% !important;
-  animation: milestoneOne 0.2s linear !important;
-}
 
-@keyframes milestoneOne {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 50%;
-  }
-}
-
-.milestone2 {
-  left: 25% !important;
-  animation: milestoneTwo 0.2s linear !important;
-}
-
-@keyframes milestoneTwo {
-  0% {
-    left: 50%;
-  }
-  100% {
-    left: 25%;
-  }
-}
-
-.milestone3 {
-  left: 0% !important;
-  animation: milestoneThree 0.2s linear !important;
-}
-
-@keyframes milestoneThree {
-  0% {
-    left: 25%;
-  }
-  100% {
-    left: 0%;
-  }
-}
 
 .milestone4 {
   left: -25% !important;
