@@ -378,10 +378,6 @@ header .navbar-header a img{ display: inline-block;}
   text-transform: uppercase; position:relative;
 }
 
-.indexaboucont {
-  padding: 60px 0;
-}
-
 .btn-info {
   background-color: transparent;
   border: 2px solid #0080ff !important;
@@ -425,10 +421,6 @@ header .navbar-header a img{ display: inline-block;}
   text-align: center;
 }
 
-.indexaboutsec {
-  background: rgba(0, 0, 0, 0)  url(../images/aboutbg.png) no-repeat scroll center/cover;
-}
-
 .title.centersect:after{  background: rgba(0, 0, 0, 0)  url(../images/afthead.png) no-repeat scroll 0 0;}
 .title.centersect:before{
 background: rgba(0, 0, 0, 0)  url(../images/afthead.png) no-repeat scroll 0 0;
@@ -453,7 +445,11 @@ left: -41px !important;
 }
 
 
-/* About Section 2 */
+/* About Section */
+
+.about {
+  margin-top: 80px;
+}
 
 .wrench-container {
   height: 400px;
@@ -490,7 +486,7 @@ left: -41px !important;
   position: absolute;
   z-index: -2 !important;
   left: 400px;
-  top: 240px;
+  top: 150px;
   height: 220px;
 }
 
@@ -511,6 +507,32 @@ left: -41px !important;
   left: 350px;
   top: 200px;
   transform: rotate(120deg);
+}
+
+/* Bonus Section */
+.bonus-section {
+  background-color: #1788FA;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.bonus-section h3 {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+.bonus-section p {
+  font-weight: 300;
+}
+
+.bonus-vid {
+  box-shadow: none !important;
+}
+
+.bonus-item {
+  padding: 20px;
 }
 
 /* New Section */
@@ -687,14 +709,6 @@ left: -41px !important;
   right: -41px;
   top: 10px;
   width: 33px;
-}
-
-.indexaboucont p {
-  color: #174a7c;
-  font-family: open sans;
-  font-size: 16px;
-  line-height: 30px;
-  padding: 22px 0;
 }
 
 .countDays, .countHours, .countMinutes, .countSeconds {
@@ -1559,11 +1573,18 @@ left: -41px !important;
   margin: 0 0 29px;
 }
 
+.indregsec input {
+  display: flex;
+  justify-content: center;
+}
+
 .indresgsec h2 {
   color: #0a243e;
   font-size: 35px;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .indresgsec > h2 span {
@@ -2686,25 +2707,17 @@ td img {
 .featcont p {
   width: auto;
 }
-	.titldes {
+
+.titldes {
   padding: 0 0 24px;
   text-align: center;
 }
 
-	.bannertext {
+.bannertext {
   padding: 0 0 10px;
   text-align: center;
 }
 
-
-.abouimgsec img {
-  display: inline-block;
-}
-
-.indexaboutsec {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  padding: 0 0 39px;
-}
 .counterimge {
   padding: 19px 0 0;
   text-align: center;
@@ -2713,10 +2726,6 @@ td img {
 .roadmap {
   background: transparent none repeat scroll 0 0;
   /*padding: 53px 0;*/
-}
-
-.toplinksec ul, .language, .indexaboutsec {
-  text-align: center;
 }
 
 .videdes {
