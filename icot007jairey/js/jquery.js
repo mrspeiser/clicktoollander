@@ -1,35 +1,27 @@
 $(document).ready(function(){
-  var n = 1;
-  $('.milestone-container').click(function(){
-    $('.milestone-gear').removeClass('stop');
-    if (n == 3) {
-      $('.milestone-gear').removeClass('milestone3');
-      $('.milestone-gear').addClass('milestone1');
-      n = 1;
-    } else if (n == 2) {
-      $('.milestone-gear').removeClass('milestone2');
-      $('.milestone-gear').addClass('milestone3');
-      n += 1;
-    } else if (n == 1) {
-      $('.milestone-gear').removeClass('milestone1');
-      $('.milestone-gear').addClass('milestone2');
-      n += 1;
-    }
-  });
+  var dragging = false
 
-  $('.milestone-container').mouseenter(function(){
-    $('.milestone-gear').removeClass('spin');
-    $('.milestone-gear').addClass('stop');
-    $('.milestone-gear').addClass('milestone1');
-  });
+  $(function() {
 
-  $('.milestone-container').mouseleave(function(){
-    $('.milestone-gear').removeClass('rotated');
-    $('.milestone-gear').removeClass('stop');
-    $('.milestone-gear').addClass('spin');
-    $('.milestone-gear').removeClass('milestone1');
-    $('.milestone-gear').removeClass('milestone2');
-    $('.milestone-gear').removeClass('milestone3');
-    n = 1;
-  });
+    var target = $('.milestone-gear')
+    $(document).mousedown(function() {
+      dragging = true
+      $('.milestone-gear').removeClass('spin');
+    })
+    $(document).mouseup(function() {
+      dragging = false
+      $('.milestone-gear').addClass('spin');
+    })
+    $(document).mousemove(function(e) {
+      if (dragging) {
+        var mouse_x = e.pageX;
+        var mouse_y = e.pageY;
+        var degree = (mouse_y, mouse_x);
+        target.css('-moz-transform', 'rotate(' + degree + 'deg)');
+        target.css('-webkit-transform', 'rotate(' + degree + 'deg)');
+        target.css('-o-transform', 'rotate(' + degree + 'deg)');
+        target.css('-ms-transform', 'rotate(' + degree + 'deg)');
+      }
+    })
+  })
 });
