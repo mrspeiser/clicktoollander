@@ -882,35 +882,30 @@ left: -41px !important;
 }
 
 
+/* Milestone Section */
 
-.roadmap_caraousel{ overflow:hidden;} /* Key Dates */
-.roadmap_caraousel .owl-controls .owl-pagination{ display:none;}
-.roadmap_caraousel .owl-item{ text-align:center;}
-.roadmap_caraousel .owl-item img{ width:auto; display:inline-block;}
 
-.rightsidehead {
-  text-align: right;
+.milestone-container {
+  height: 400px;
+  overflow: hidden;
+  pointer-events: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.spingear-container {
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: -250px;
-  top: 80px;
-  width: 550px;
-  height: 550px;
-}
-
-.spin-gear {
-  height: 500px;
-  width: 500px;
-  transform: rotate(0deg);
+.milestone-gear {
+  pointer-events: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .spin {
   animation: rotate 20s linear infinite;
+  animation-direction: reverse;
 }
 
 @keyframes rotate {
@@ -953,131 +948,6 @@ left: -41px !important;
   }
 }
 
-.slideshow {
-  animation: milestone 30s linear infinite !important;
-}
-
-@keyframes milestone {
-  0% {
-    opacity: 0;
-    left: 60%;
-  }
-  3% {
-    opacity: 1;
-  }
-  97% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    left: -90%;
-  }
-}
-
-.milestone1 {
-  left: 50% !important;
-  animation: milestoneOne 0.2s linear !important;
-}
-
-@keyframes milestoneOne {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 50%;
-  }
-}
-
-.milestone2 {
-  left: 25% !important;
-  animation: milestoneTwo 0.2s linear !important;
-}
-
-@keyframes milestoneTwo {
-  0% {
-    left: 50%;
-  }
-  100% {
-    left: 25%;
-  }
-}
-
-.milestone3 {
-  left: 0% !important;
-  animation: milestoneThree 0.2s linear !important;
-}
-
-@keyframes milestoneThree {
-  0% {
-    left: 25%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
-.milestone4 {
-  left: -25% !important;
-  animation: milestoneFour 0.2s linear !important;
-}
-
-@keyframes milestoneFour {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: -25%;
-  }
-}
-
-.milestone5 {
-  left: -50% !important;
-  animation: milestoneFive 0.2s linear !important;
-}
-
-@keyframes milestoneFive {
-  0% {
-    left: -25%;
-  }
-  100% {
-    left: -50%;
-  }
-}
-
-.roadmap-with-gear {
-  position: relative;
-}
-
-.roadmap {
-  /*background:  url(../images/key.png) no-repeat scroll left center, rgba(0, 0, 0, 0) url(../images/keybg.jpg) no-repeat scroll center/cover;*/
-  padding: 53px 0;
-  transform: scale(1.4);
-  position: relative;
-  left: 165px;
-  opacity: 1;
-  padding: 100px 0px;
-  /* -webkit-animation: slideRight 10000ms cubic-bezier(0.22, 0.56, 0.88, 0.43) 1000ms infinite forwards;
-  -o-animation: slideRight 10000ms cubic-bezier(0.22, 0.56, 0.88, 0.43) 1000ms infinite forwards;
-  animation: slideRight 10000ms cubic-bezier(0.22, 0.56, 0.88, 0.43) 1000ms infinite forwards; */
-}
-
-@keyframes slideRight {
-  0%{
-    left: 185px;
-    opacity: 0;
-    }
-  5% {
-    opacity: 1;
-  }
-  95%{
-    opacity: 1;
-  }
-  100%{
-    left: -200px;
-    opacity: 0;
-    }
-
-}
 .rightsidehead::after {
   left: -41px !important;
   margin: 0;
