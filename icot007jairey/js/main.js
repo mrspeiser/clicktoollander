@@ -70,7 +70,7 @@ $(window).scroll(function() {
         'transform': 'rotate(' + offset + 'deg)',
     });
 
-    $('#light-blue-gear').css({
+    $('#yellow-gear').css({
         '-moz-transform': 'rotate(' + offset + 'deg)',
         '-webkit-transform': 'rotate(' + offset + 'deg)',
         '-o-transform': 'rotate(' + offset + 'deg)',
