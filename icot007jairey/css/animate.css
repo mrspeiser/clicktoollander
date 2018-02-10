@@ -165,6 +165,15 @@ Copyright (c) 2015 Daniel Eden
   animation-name: pulse;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @-webkit-keyframes rubberBand {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
