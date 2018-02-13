@@ -473,6 +473,11 @@ header .navbar-header a img{ display: inline-block;}
 
 .watch-video h5 {
   font-weight: 300;
+  color: white;
+}
+
+.watch-video h3 {
+  color: white;
 }
 
 .watch-video:hover {
@@ -481,8 +486,49 @@ header .navbar-header a img{ display: inline-block;}
   cursor: pointer;
 }
 
-.watch-video:hover h3 {
+.watch-video:hover h3  {
   color: #1db8d3 !important;
+}
+
+.watch-video:hover h5  {
+  color: #1db8d3 !important;
+}
+
+/***** Modal *****/
+
+.modal-backdrop.in {
+    filter: alpha(opacity=7);
+    opacity: 0.7;
+}
+
+.modal-content {
+    background: none;
+    border: 0;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+.modal-body {
+    padding: 0 25px 25px 25px;
+}
+
+.modal-header {
+    padding: 25px 25px 15px 25px;
+    text-align: right;
+}
+
+.modal-header, .modal-footer {
+    border: 0;
+}
+
+.modal-header .close {
+    float: none;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: none;
+    opacity: 1;
 }
 
 /* Bonus Section */
@@ -685,14 +731,22 @@ header .navbar-header a img{ display: inline-block;}
   margin-top: 60px;
   height: 250px;
   text-align: center;
-  color: #26537A;
+  color: #2cbad3;
   width: 220px;
+}
+
+.team-div h5 {
+  color: #B3B3B3;
 }
 
 .team-div:hover {
   background-color: #2cb8d2;
-  color: white;
+  color: white !important;
   cursor: pointer;
+}
+
+.team-div:hover h5 {
+  color: white;
 }
 
 .team-div:hover .hover-visibility {
@@ -743,11 +797,19 @@ header .navbar-header a img{ display: inline-block;}
 }
 
 .indresgsec {
-  height: 550px;
-  border-radius: 5px;
-  background-color: #2cbad3;
   width: 450px;
   margin: 20px auto;
+}
+
+.sign-up {
+  height: 100px;
+  background-color: #2cbad3;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-button i {
+  animation: rotate 3s linear infinite;
 }
 
 .action-left {
