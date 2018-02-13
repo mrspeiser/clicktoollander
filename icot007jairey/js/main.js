@@ -55,7 +55,9 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-// End Dynamic Headline
+
+
+// Scrolling Wrench
 
 $(window).scroll(function() {
 
@@ -95,4 +97,22 @@ $(window).scroll(function() {
         'transform': 'rotate(' + offset + 'deg)',
     });
 
+});
+
+
+// Video Modal:
+
+$('.launch-modal').on('click', function(e){
+    e.preventDefault();
+    $( '#' + $(this).data('modal-id') ).modal();
+    if ($( $(this).data('modal-id')).modal().selector == 'modal-video1') {
+      document.getElementById('video-frame1').play();
+    } else if ($( $(this).data('modal-id')).modal().selector == 'modal-video2') {
+      document.getElementById('video-frame2').play();
+    }
+});
+
+$(".modal-video-div").on("hidden.bs.modal", function () {
+  document.getElementById('video-frame1').pause();
+  document.getElementById('video-frame2').pause();
 });
