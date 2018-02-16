@@ -503,34 +503,36 @@
     </div>
   </div>
 
-<div class="container">
-  <div id="piechart"></div>
+<!-- Chart Section -->
+<div class="container chart-container">
+  <h1>The Distribution Plan</h1>
+  <h3>Transparency from Day One</h3>
+  <div class="chart-holder">
+    <div>
+      <h4>Token Sale Contributions Breakdown</h4>
+      <div id="chart1"></div>
+      <div id="legend1" class="legend">
+        <h4 id="marketing"><span><span>O </span>Marketing</span><span>40%</span></h4>
+        <h4 id="development"><span><span>O </span>Development</span><span>30%</span></h4>
+        <h4 id="acquisition"><span><span>O </span>Acquisition</span><span>20%</span></h4>
+        <h4 id="legal"><span><span>O </span>Legal</span><span>10%</span></h4>
+        <h4>&nbsp;</h4>
+      </div>
+    </div>
+    <div class="chart-line hidden-sm hidden-xs"></div>
+    <div>
+      <h4>Token Distribution Breakdown</h4>
+      <div id="chart2"></div>
+      <div id="legend2" class="legend">
+        <h4 id="ico"><span><span>O </span>ICO</span><span>50%</span></h4>
+        <h4 id="liquidity"><span><span>O </span>Liquidity</span><span>20%</span></h4>
+        <h4 id="distribution"><span><span>O </span>Distribution</span><span>12%</span></h4>
+        <h4 id="presale"><span><span>O </span>Presale</span><span>10%</span></h4>
+        <h4 id="community"><span><span>O </span>Community</span><span>8%</span></h4>
+      </div>
+    </div>
+  </div>
 </div>
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  // Load google charts
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-
-  // Draw the chart and set the chart values
-  function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Expense', 'Percent'],
-  ['Marketing', 40],
-  ['Development', 30],
-  ['Acquisition', 20],
-  ['Legal', 10]
-  ]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Expenses', 'width':800, 'height':400, colors: ['#24537f', '#fd8a66', '#2cb8d1', '#fbc943']};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-  }
-</script>
 
 
 <div class="faqandvideo"><!-- Video Section -->
@@ -666,6 +668,7 @@
 
 </wrapper>
 </body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -675,5 +678,6 @@
 <script src="js/main.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
+
 
 </html>
